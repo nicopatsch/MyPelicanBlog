@@ -4,6 +4,7 @@ image: python:3.6.1
 
 pages:
   script:
+  - pip install --upgrade pip
   - pip install -r requirements.txt
   - pelican -s publishconf.py
   artifacts:
