@@ -1,0 +1,12 @@
+# This file is a template, and might need editing before it works on your project.
+# Full project: https://gitlab.com/pages/pelican
+image: python:3.6.1
+
+pages:
+  script:
+  - pip install --upgrade pip
+  - pip install -r requirements.txt
+  - pelican -s publishconf.py
+  artifacts:
+    paths:
+    - public/
