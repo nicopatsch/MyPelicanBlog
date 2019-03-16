@@ -9,4 +9,4 @@ pages:
   - pelican -s publishconf.py
   artifacts:
     paths:
-    - public/
+    - output/
