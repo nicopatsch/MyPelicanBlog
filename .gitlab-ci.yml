@@ -1,6 +1,6 @@
 # This file is a template, and might need editing before it works on your project.
 # Full project: https://gitlab.com/pages/pelican
-image: python:3.6.1
+image: python:3.6-alpine
 
 pages:
   script:
@@ -9,4 +9,4 @@ pages:
   - pelican -s publishconf.py
   artifacts:
     paths:
-    - output/
+    - public/
